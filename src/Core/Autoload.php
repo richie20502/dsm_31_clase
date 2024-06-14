@@ -7,7 +7,9 @@ class Autoload {
         spl_autoload_register(function ($class){
             $prefix = 'App\\';
             $base_dir = __DIR__.'/../';
+            print($base_dir);
             $len = strlen($prefix);
+            print($len) ;
             if( strncmp($prefix, $base_dir, $len ) !== 0){
                 return;
             }
