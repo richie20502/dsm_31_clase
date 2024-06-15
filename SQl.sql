@@ -1,5 +1,5 @@
 -- Table UserTypes
-CREATE TABLE UserTypes (
+CREATE TABLE user_types (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL
 );
@@ -8,10 +8,10 @@ CREATE TABLE UserTypes (
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
     first_name VARCHAR(50) NOT NULL,
-    Last_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     phone VARCHAR(20),
-    Address VARCHAR(255),
+    address VARCHAR(255),
     user_type_id INT,
     FOREIGN KEY (user_type_id) REFERENCES user_types(id)
 );
