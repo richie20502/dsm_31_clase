@@ -19,7 +19,7 @@
                             <form action="postLogin" method="post">
                                 <div class="form-group">
                                     <label for="username">Username</label>
-                                    <input type="text" id="username" name="username" class="form-control" required>
+                                    <input type="text" id="username" name="email" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>

@@ -27,4 +27,8 @@ class HomeController {
         require __DIR__. '/../Views/home.php';           
     }
 
+    public function home(){
+        require __DIR__.'/../Views/home.php';
+    }
+
 } 
