@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>
-        <?php session_start(); print_r($_SESSION) ?>
+        <?php print_r($_SESSION['id']) ?>
         BIENVENIDO
     </h1>
     <p>
