@@ -14,6 +14,9 @@ $router->add('/home','HomeController@home','GET', [[AuthMiddleware::class, 'hand
 $router->add('/logout','AuthController@logout');
 
 
+$router->add('/products/create','ProductController@create');
+
+
 
 
 return $router;
