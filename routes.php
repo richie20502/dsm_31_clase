@@ -15,6 +15,7 @@ $router->add('/logout','AuthController@logout');
 
 
 $router->add('/products/create','ProductController@create');
+$router->add('/products/create','ProductController@store','POST');
 
 
 

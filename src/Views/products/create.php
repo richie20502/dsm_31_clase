@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h1>create product</h1>
-        <form action="">
+        <form action="/products/create" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
