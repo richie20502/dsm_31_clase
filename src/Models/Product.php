@@ -11,6 +11,19 @@ class Product{
     }
 
     public function create($data){
+        $sql = "INSERT INTO products (name, description, price, stock, category_id) 
+        VALUES(?,?,?,?,?)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bind_param('ssiii',
+            $data['name'],
+            $data['description'],
+            $data['price'],
+            $data['stock'],
+            $data['category_id']);
+        return $stmt->execute();
+    }
+
+    public function getAll(){
         
     }
 
